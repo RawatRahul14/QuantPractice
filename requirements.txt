@@ -1,0 +1,10 @@
+pandas==2.2.3
+numpy==2.2.1
+matplotlib==3.10.0
+statsmodels==0.14.4
+pandas_datareader==0.10.0
+datetime==5.5
+yfinance==0.2.51
+scikit-learn==1.6.0
+PyPortfolioOpt==1.5.6
+pandas-ta

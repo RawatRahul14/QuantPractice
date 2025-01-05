@@ -8,7 +8,7 @@ Garman-Klass Volatility is a measure of the volatility of a financial assets's p
 
 Traditional volatility calculations, such as those based only on the closing prices, may miss valuable intraday price information. Garman-Klass takes into account the day's high and low prices, which provides a more precise measure of true price variability.
 
-**TheGarman-Klass Formula:**
+**The Garman-Klass Formula:**
 
 The formula for Garman-Klass volatility is:
 
@@ -35,3 +35,8 @@ where:
     - Opening and closing prices reflect the start and end of the day's trading session. Their relationship helps refine the volatility estimate.
 - Adjustment Factor:
     - The term $2\ln(2) - 1 \approx 0.386$ corrects for the overlapping information between high-low and open-close price ranges.
+
+**Explanation**
+- **High-Low Price Difference:** You calculate the difference between the high and low prices using logarithms. This captures the intraday volatility.
+- **Close-Open Price Difference:** The difference between the closing and opening prices, adjusted by the constant $2\ln(2) - 1 \approx 0.386$, accounts for the market’s closing behavior.
+- **Formula Structure:** By keeping the squared log differences, you're ensuring that both components are always positive (or zero). This should give you a non-negative volatility measure.
